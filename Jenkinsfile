@@ -4,7 +4,7 @@ pipeline{
     
     stages {
         
-        stage('Git Checkout'){
+        stage("Git Checkout"){
             
             steps{
                 
@@ -14,13 +14,13 @@ pipeline{
                 }
             }
         }
-        stage('UNIT testing'){
-            gtygyg
+        stage("UNIT testing"){
+    
             steps{
                 
                 script{
                     
-                    sh 'mvn test'
+                    sh "mvn test"
                 }
             }
         }
