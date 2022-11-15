@@ -1,10 +1,28 @@
-pipeline {
-    agent any
+pipeline{
+    
+    agent any 
+    
     stages {
-        stage('git checkout')
-        step {
-            git branch: 'main', url: 'https://github.com/mohamed-chargui/thursday-presentation
+        
+        stage('Git Checkout'){
+            
+            steps{
+                
+                script{
+                    
+                    git branch: 'main', url: 'https://github.com/vikash-kumar01/mrdevops_javaapplication.git'
+                }
+            }
+        }
+        stage('UNIT testing'){
+            gtygyg
+            steps{
+                
+                script{
+                    
+                    sh 'mvn test'
+                }
+            }
         }
     }
-}
-  
+} 
