@@ -14,7 +14,7 @@ pipeline{
                 
                 script{
                     
-                    git branch: 'main', url: 'https://github.com/mohamed-chargui/thursday-presentation.git'
+                    git branch: 'Develop', url: 'https://github.com/akremgr/cicd-demo.git'
                 }
             }
         }
